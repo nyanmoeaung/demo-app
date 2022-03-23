@@ -88,7 +88,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 9. php artisan migrate
 
-Note : If you want to convert tailwind css to bootstrap, please follow below as:
+Note : If you want to convert tailwind css to bootstrap, please follow as:
 
 10. composer require nascent-africa/jetstrap --dev
 
