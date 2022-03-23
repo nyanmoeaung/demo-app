@@ -59,3 +59,42 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Create skeleton project
+
+1. composer create-project laravel/laravel:^8.0 example-app
+
+2. composer require laravel/jetstream
+
+3. php artisan jetstream:install inertia
+
+4. npm install && npm run dev
+
+5. npm uninstall laravel-mix
+
+6. npm install laravel-mix@latest
+
+7. change previous scripts to follow as
+"scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+8. composer require laravel/sanctum
+
+9. php artisan migrate
+
+If you want to convert tailwind css to bootstrap, please follow below as:
+
+10. composer require nascent-africa/jetstrap --dev
+
+11. php artisan jetstrap:swap inertia
+
+If you want to disable notification of laravel mix, please follow as:
+
+add in mix.js code line as .disableNotifications() in webpack.mix.js
+
