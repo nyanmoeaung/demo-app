@@ -88,13 +88,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 9. php artisan migrate
 
-If you want to convert tailwind css to bootstrap, please follow below as:
+Note : If you want to convert tailwind css to bootstrap, please follow below as:
 
 10. composer require nascent-africa/jetstrap --dev
 
 11. php artisan jetstrap:swap inertia
 
-If you want to disable notification of laravel mix, please follow as:
+Note : If you want to disable notification of laravel mix, please follow as:
 
 add in mix.js code line as .disableNotifications() in webpack.mix.js
 
